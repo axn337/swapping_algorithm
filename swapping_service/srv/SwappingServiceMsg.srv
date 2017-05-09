@@ -1,0 +1,8 @@
+#SwappingServiceMsg.srv
+#modified vesion of Kevin Bradner's 
+#by Ammar Nahari axn337
+
+string[] part_names
+geometry_msgs/PoseStamped[] initial_poses
+---
+bool successful_swap

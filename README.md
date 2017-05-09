@@ -1,17 +1,11 @@
-# ammar_ros_service
+## swapping algorithm
 
-A node that deal with service-client communication method. This package is the third assignment in the course EECS-476. It has two cpp files: my_path_service and my_path_client. In my_path_client, a number of poses are specified and sent to my_path_client, where it communicate with the stdr_simulator to move the robot according to the specified poses taken from my_path_client.
+Graduae student final project submission and ARIAC competetion swapping algorithm implementation for the course EECS 476. Refer to the report here:
 
-## Example usage/Running tests
+https://docs.google.com/a/case.edu/document/d/1ohC8wu5aAg3uUNm2hJlt80vBXN75qsaEdglSBed1a6I/edit?usp=sharing
 
-Running the samulator:
-roslaunch stdr_launchers server_with_map_and_gui_plus_robot.launch
 
-Running the service:
-rosrun ammar_ros_service my_path_service
 
-Running the service client:
-rosrun ammar_ros_service my_path_client
 
 
 

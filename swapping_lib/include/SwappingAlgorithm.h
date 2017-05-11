@@ -13,7 +13,7 @@
 
 class SwappingAlgorithm: public AriacBase {
 public:
-    SwappingAlgorithm(ros::NodeHandle nodeHandle, RobotMove robotMove, BinManager binManager);
+    SwappingAlgorithm(ros::NodeHandle& nodeHandle, RobotMove& robotMove, BinManager& binManager);
 
     bool swapParts(vector<pair<Part, Part>> action);
     // first Part is a current exist part and second part is the target location of the part. This function should correct the location for all the pairs of part.
@@ -23,11 +23,11 @@ private:
     ros::NodeHandle nh;
 
     //defined variable for storing the first part
-    Part temp_part; 
+	Part temp_part; 
 
 
-    shared_ptr<RobotMove> robotMovePtr;
-    shared_ptr<BinManager> binManagerPtr;
+    RobotMove *robotMovePtr;
+    BinManager *binManagerPtr;
 
 };
 
